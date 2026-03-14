@@ -1,0 +1,45 @@
+{
+  "name": "z3-solver-full",
+  "version": "0.1.0",
+  "description": "Full-surface Z3 4.16.0 WASM bindings — zero dependencies. User propagators, clause streaming, chainable DSL, exact model inspection.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "vendor",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wi-ski/z3-solver-full"
+  },
+  "keywords": [
+    "z3",
+    "smt",
+    "sat",
+    "wasm",
+    "solver",
+    "user-propagator",
+    "callbacks",
+    "constraint-solving",
+    "theorem-prover"
+  ]
+}
