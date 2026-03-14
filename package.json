@@ -1,6 +1,6 @@
 {
   "name": "z3-solver-full",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Full-surface Z3 4.16.0 WASM bindings — zero dependencies. User propagators, clause streaming, chainable DSL, exact model inspection.",
   "type": "module",
   "main": "./dist/index.js",
